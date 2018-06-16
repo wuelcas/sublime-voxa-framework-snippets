@@ -1,0 +1,17 @@
+<snippet>
+    <content><![CDATA[
+const Voxa = require('voxa');
+const views = require('${1:./views}');
+const variables = require('${2:./variables}');
+const states = require('${3:./states}');
+
+const skill = new Voxa({ variables, views });
+states.register(skill);
+
+module.exports = skill;
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>mainstatemachineVoxa</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.js</scope>
+</snippet>
